@@ -42,18 +42,24 @@
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "Data Modeling": "In microlensing, data modeling is rather complicated because of its mathematical structure. I am good at using MCMC/downhill algorithm with grid-search method to finish multi-dimensionally data modeling. ",
+      "HPC": "I am experienced in using HPC to conduct computation-intensive project.",
+      "Deep Learning": "In my recent study, I try to use a deep learning model to study cosmology. I am now learning how to train and utilize deep learning model for astronomy" 
+    }
+  ],
   "languages": [
     {
       "Chinese": "Native",
       "English": "Working Language"
     }
   ],
-  "interests": [
+  "research focus": [
     {
-      "Sport": "Baseball, Fitness",
-      "Reading": "Biography, Science Fiction",
-      "Animation": "Chiikawa"
+      "exoplanet": "Microlensing"
+      "cosmology": "Observational cosmology, Weak lensing"
+      "AI4Astronomy": "Deep learning"
     }
   ],
   "references": [],
