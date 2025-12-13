@@ -35,9 +35,12 @@ Research experience
   
 Skills
 ======
-* Skill 1 HPC: with experience in microlensing data modeling and in cosmology MCF computation, I am experienced in using HPC to conduct computation-intensive project.
-* Skill 2 Data Modeling/Analysis: my research experience in microlensing especially trained me good at data modeling/analysis. I can skillfuly use MCMC/downhill algorithm and grid search method to finish high-dimensional data fitting.
-* Skill 3 Deep learning: in ongoing project, I want to use deep learning to analyze the relationship between two physical properties in cosmological numerical simulation. Now I am learn to train and utilze deep learning model for astronomy.
+* Skill 1 HPC
+  * With experience in microlensing data modeling and in cosmology MCF computation, I am experienced in using HPC to conduct computation-intensive project.
+* Skill 2 Data Modeling/Analysis
+  * My research experience in microlensing especially trained me good at data modeling/analysis. I can skillfuly use MCMC/downhill algorithm and grid search method to finish high-dimensional data fitting.
+* Skill 3 Deep learning
+  * In ongoing project, I want to use deep learning to analyze the relationship between two physical properties in cosmological numerical simulation. Now I am learn to train and utilze deep learning model for astronomy.
 
 Publications
 ======
