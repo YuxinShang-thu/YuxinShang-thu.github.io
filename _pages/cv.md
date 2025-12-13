@@ -11,35 +11,36 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Mathematics and Physics, Tsinghua University, 2026(expected)
 
-Work experience
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Apr. 2024 ~ Sep. 2025: Scientific Researcher
+  * Tsinghua University
+  * Project: Binary-lens Microlensing Effect on Planetary Sensitivity and Mass-ratio Function
+  * Duties includes: Organize research plan; Comprehensively simulate microlensing data analysis pipeline; Develop custom codes for data modeling to optimize accuracy–efficiency tradeoff
+  * Supervisor: Prof. Shude Mao, Dr. Hongjing Yang
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Sep. 2025 ~ ongoing: Main Participant
+  * Westlake University
+  * Project: DREAMS -- DECam Rogue Earths And Mars Survey
+  * Duties included: 6-Night observation using 4m Blance/DECam telescope in Chile (remote)
+  * PI of DREAMS: Dr. Hongjing Yang, Dr. Weicheng Zang
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Sep. 2025 ~ ongoing: Scientific Researcher
+  * Leiden University
+  * Project: Explore Intrinsic Galaxy Alignment with Marked Correlation Function (utilizing numerical simulation FLAMINGO)
+  * Duties included: Organize research plan; Develop custom pipeline for MCF measurement; Validation for FLAMINGO's samples
+  * Supervisor: Prof. Henk Hoekstra, Dr. David Navarro, Dr. Divya Rana
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Skill 1 HPC: With experience in microlensing data modeling and in cosmology MCF computation, I am experienced in using HPC to conduct computation-intensive project.
+* Skill 2 Data Modeling/Analysis: 
+  * Sub-skill 2.1 MCMC/downhill algorithm
+  * Sub-skill 2.2 
+  * Sub-skill 2.3 
+* Skill 3 Deep learning: 
 
 Publications
 ======
