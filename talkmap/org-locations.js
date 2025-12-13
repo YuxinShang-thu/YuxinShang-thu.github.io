@@ -8,5 +8,10 @@ var addressPoints = [
     "Conference Poster Talk on Binary-lens Microlensing Degeneracy Effect<br />International Conference on Exoplanets and Planet Formation; Shanghai, China",
     31.2312707,
     121.4700152
+  ],
+  [
+    "Presentation on Microlensing Technique<br />Tsinghua Xuetang Talents Program(physics); Tsinghua University, Beijing, China",
+    40.0022905,
+    116.320963
   ]
 ];
