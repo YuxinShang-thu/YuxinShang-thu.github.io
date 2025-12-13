@@ -35,12 +35,9 @@ Research experience
   
 Skills
 ======
-* Skill 1 HPC: With experience in microlensing data modeling and in cosmology MCF computation, I am experienced in using HPC to conduct computation-intensive project.
-* Skill 2 Data Modeling/Analysis: 
-  * Sub-skill 2.1 MCMC/downhill algorithm
-  * Sub-skill 2.2 
-  * Sub-skill 2.3 
-* Skill 3 Deep learning: 
+* Skill 1 HPC: with experience in microlensing data modeling and in cosmology MCF computation, I am experienced in using HPC to conduct computation-intensive project.
+* Skill 2 Data Modeling/Analysis: my research experience in microlensing especially trained me good at data modeling/analysis. I can skillfuly use MCMC/downhill algorithm and grid search method to finish high-dimensional data fitting.
+* Skill 3 Deep learning: in ongoing project, I want to use deep learning to analyze the relationship between two physical properties in cosmological numerical simulation. Now I am learn to train and utilze deep learning model for astronomy.
 
 Publications
 ======
@@ -53,13 +50,13 @@ Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Sep. 2024 ~ Sep. 2025: I was the Scientific Minister in Tsinghua Astronomy Society(TAS) last year. My duties included
+  * Organizing regular seminars and public science lectures of Tsinghua Astronomy Society. Since last year, we have been collaborating with Tsinghua Alumni Society in Boston to give public lectures together.
+  * Administering and reviewing the publication of public science articles on the official Wechat channel of Tsinghua
+Astronomy Society. By now, our Wechat channel has more than 20k followers.
+  * Maintaining the regular activities of Tsinghua Astronomy Society, including sidewalk astronomy, telescope
+management, astronomical photography exhibition, etc.
