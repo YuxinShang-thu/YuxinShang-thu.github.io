@@ -54,7 +54,14 @@ Talks
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
 
-  
+Awards and Scholarships
+======
+* [Jiang Nanxiang Award](https://yz.tsinghua.edu.cn/en/Financial_Aid/Financial_Aid_System.htm), awarded by Tsinghua University in Sep. 2025
+* [Tsinghua Xuetang Talents Program](https://www.tsinghua.edu.cn/en/Admissions/Undergraduate/Tsinghua_Xuetang_Talents_Program.htm)(physics), selected by Tsinghua University in Sep. 2024.
+* First Class Scholarship, awarded by Tsinghua University in Sep. 2024.
+
+
+
 Service and leadership
 ======
 * Sep. 2024 ~ Sep. 2025: I was the Scientific Minister in Tsinghua Astronomy Society(TAS) last year. My duties included
