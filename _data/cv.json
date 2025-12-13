@@ -2,9 +2,9 @@
   "basics": {
     "name": "Yuxin Shang",
     "email": "shangyx22@mails.tsinghua.edu.cn",
-    "phone": "",
+    "phone": "+86 137 2165 6248",
     "website": "https://yuxinshang-thu.github.io",
-    "summary": "Senior in Tsinghua University. Short biography for the left-hand sidebar",
+    "summary": "As a Senior in Tsinghua University, majoring in mathematics and physics, I have broad interets in astronomy. Please contact me freely for any questions or topics. Short biography for the left-hand sidebar",
     "location": {
       "address": "30 Shuangqing Road",
       "postalCode": "100084",
@@ -43,24 +43,18 @@
     }
   ],
   "skills": [
-    {
       "Data Modeling": "In microlensing, data modeling is rather complicated because of its mathematical structure. I am good at using MCMC/downhill algorithm with grid-search method to finish multi-dimensionally data modeling. ",
       "HPC": "I am experienced in using HPC to conduct computation-intensive project.",
       "Deep Learning": "In my recent study, I try to use a deep learning model to study cosmology. I am now learning how to train and utilize deep learning model for astronomy" 
-    }
   ],
   "languages": [
-    {
       "Chinese": "Native",
       "English": "Working Language"
-    }
   ],
-  "research focus": [
-    {
+  "research experience": [
       "exoplanet": "Microlensing",
       "cosmology": "Observational cosmology, Weak lensing",
       "AI4Astronomy": "Deep learning"
-    }
   ],
   "references": [],
   "publications": [
