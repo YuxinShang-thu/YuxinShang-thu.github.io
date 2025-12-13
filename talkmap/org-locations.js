@@ -10,6 +10,11 @@ var addressPoints = [
     121.4700152
   ],
   [
+    "The Effect of Resonance on Stability in a Planetary System<br />Stars and Planets, by Prof. Chris Ormel; Tsinghua University, Beijing, China",
+    40.0022905,
+    116.320963
+  ],
+  [
     "Presentation on Microlensing Technique<br />Tsinghua Xuetang Talents Program(physics); Tsinghua University, Beijing, China",
     40.0022905,
     116.320963
