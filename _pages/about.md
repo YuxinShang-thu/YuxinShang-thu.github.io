@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yuxin Shang's personal academic website"
+title: "Yuxin Shang"
 author_profile: true
 redirect_from: 
   - /about/
