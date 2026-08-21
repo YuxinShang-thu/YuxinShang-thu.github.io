@@ -11,7 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in Mathematics and Physics, Tsinghua University, 2026(expected)
+* Ph.D. in Astronomy, The Ohio State University, 2026 - ongoing
+* B.S. in Mathematics and Physics, Tsinghua University, 2022 - 2026
 
 Research experience
 ======
@@ -32,6 +33,12 @@ Research experience
   * Project: Explore Intrinsic Galaxy Alignment with Marked Correlation Function (utilizing numerical simulation FLAMINGO)
   * Duties included: Organize research plan; Develop custom pipeline for MCF measurement; Validation for FLAMINGO's samples
   * Supervisor: Prof. Henk Hoekstra, Dr. David Navarro, Dr. Divya Rana
+ 
+* Feb. 2026 ~ June. 2026: Graduate Thesis
+  * Tsinghua University
+  * Project: Learning Intrinsic Galaxy Alignment in Numerical Simulation
+  * Duties included: independently complete the graduate thesis. I applied a deep learning model called "DELTA" on the dataset from FLAMINGO simulation to understand the learning ability of DELTA on intrinsic alignment signal in simulated universe.
+  * Supervisor: Prof. Yuan-sen Ting(OSU), Prof. Cheng Zhao(THU)
   
 Skills
 ======
@@ -56,6 +63,7 @@ Talks
 
 Awards and Scholarships
 ======
+* Outstanding Graduate of Tsinghua University (top 10%), awarded by Tsinghua University, June 29th 2026.
 * [Jiang Nanxiang Award](https://yz.tsinghua.edu.cn/en/Financial_Aid/Financial_Aid_System.htm), awarded by Tsinghua University in Sep. 2025
 * [Tsinghua Xuetang Talents Program](https://www.tsinghua.edu.cn/en/Admissions/Undergraduate/Tsinghua_Xuetang_Talents_Program.htm)(physics), selected by Tsinghua University in Sep. 2024.
 * First Class Scholarship, awarded by Tsinghua University in Sep. 2024.
