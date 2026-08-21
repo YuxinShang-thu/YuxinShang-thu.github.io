@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Yuxin Shang / Senior in Tsinghua University"
+title                    : "Yuxin Shang / Ph.D. Graduate in OSU"
 title_separator          : "-"
 name                     : &name "Yuxin Shang"
 description              : &description "Yuxin Shang's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,11 +26,11 @@ author:
   avatar           : "profile.png"
   name             : "Yuxin Shang"
   pronouns         : # example: "she/her"  
-  bio              : "Majoring in mathematics and physics; Looking for PhD program in astronomy"
-  location         : "30 Shuangqing Road, Beijing"
-  employer         : "Tsinghua University"
-  uri              : "https://www.tsinghua.edu.cn/en/" # URL
-  email            : "shangyx22@mails.tsinghua.edu.cn" 
+  bio              : "B.S. in mathematics and physics, THU, 2026; Ph.D. in astronomy, OSU, ongoing"
+  location         : "4014 McPherson Lab"
+  employer         : "The Ohio State University, Dept. of Astronomy"
+  uri              : "https://astronomy.osu.edu" # URL
+  email            : "shang.327@osu.edu" 
 
   # Academic websites
   academia         : # URL
