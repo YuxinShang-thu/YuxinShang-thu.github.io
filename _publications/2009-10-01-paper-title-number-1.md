@@ -2,7 +2,7 @@
 title: "Binary-lens Microlensing Degeneracy: Impact on Planetary Sensitiity and Mass-ratio Function"
 collection: publications
 category: manuscripts
-excerpt: 'We find that for a pure-survey statistical sample, the 2L1S degeneracies reduce the overall planetary sensitivity by 5%–10%, with the effect increasing at higher planet-host mass ratios.'
+excerpt: 'By simulating a complete set of parameters in 2 lens event, we find that for a pure-survey statistical sample, the 2L1S degeneracies reduce the overall planetary sensitivity by 5%–10%, with the effect increasing at higher planet-host mass ratios.'
 date: 2025-11-21
 venue: 'The Astronomical Journal'
 paperurl: 'https://iopscience.iop.org/article/10.3847/1538-3881/ae14f3'
