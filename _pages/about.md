@@ -61,6 +61,8 @@ My first first-author paper on microlensing has been [published](https://iopscie
 
 In daily life, I am really into the nature. Besides the starry sky we always study, I like forests, mountains and especially the sea. I am good at hiking, which is a skill I learned when I was a child in my mountain hometown. I am now fascinated by skiing and expecting next winter. After several out-seas experiences, I become enjoying cooking and I can cook several Chinese cuisine very well, like [Hot Oil-Splashed Noodles](https://tastecooking.com/recipes/hot-oil-seared-biang-biang-noodles/), [Big Plate Chicken](https://en.wikipedia.org/wiki/Dapanji), and [Cold Noodles with Sesame Sauce](https://www.thekitchn.com/sesame-noodles-recipe-23281160).
 
+I write blogs. I always wrote articles in the busy high school life in China. And now I start to pick up this habit again to record my life and my thoughts. You can find interesting stories about me in my [Blog](https://outputasinterest.blogspot.com/) .
+
 </div>
 </section>
 
