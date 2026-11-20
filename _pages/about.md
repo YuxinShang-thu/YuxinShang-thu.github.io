@@ -6,11 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 # The short introduction under your name.
-lead: "I'm a Ph.D. student in astronomy at [The Ohio State University](https://astronomy.osu.edu). My research so far is in gravitational microlensing and weak lensing, and my interests run from exoplanets to cosmology."
+lead: "I'm a Ph.D. student in astronomy at [The Ohio State University](https://astronomy.osu.edu), working on gravitational microlensing for the [Roman](https://roman.gsfc.nasa.gov) Galactic Bulge Time Domain Survey. Before OSU, I once worked on microlensing and weak lensing in my undergraduate period."
 # Set to false to hide the interactive figure.
 lens_figure: true
 # The last sentence of the figure caption.
-lens_note: "My [first paper](/publications/2025-11-21-binary-lens-degeneracy/) shows that degeneracies like this one reduce the planetary sensitivity of a survey sample by 5–10%."
+lens_note: "This is the well-known close–wide degeneracy. There are MORE problematic degeneracies in microlensing, which can cause severe mistake in statistics! My [first paper](/publications/2025-11-21-binary-lens-degeneracy/) is about the degeneracies that do: cases where the competing models disagree on <i>q</i>, such as a planet versus a stellar binary. Those events are treated specially or left out of statistical samples, and accounting for that lowers the planetary sensitivity of a pure-survey sample by 5–10%."
 ---
 
 <section class="section" id="about">
