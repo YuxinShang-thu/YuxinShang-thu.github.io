@@ -1,0 +1,34 @@
+{%- comment -%}
+  The interactive figure on the home page. The physics and drawing live in
+  assets/js/lens.js; the starting values are the `value` attributes below.
+{%- endcomment -%}
+<figure class="lens" data-lens>
+  <div class="lens__panels" data-lens-panels>
+    <canvas class="lens__map" data-lens-map role="img" aria-label="Map of the source plane: the straight path of the background star passes the small closed caustic curve of a star–planet lens."></canvas>
+    <canvas class="lens__curve" data-lens-curve role="img" aria-label="Light curve: magnification of the background star against time, with a short double-peaked anomaly near the peak where the star crosses the caustic."></canvas>
+  </div>
+  <noscript><img class="lens__static" src="{{ '/images/lens-figure.png' | relative_url }}" alt="A caustic map and the light curve it produces, for a planet at separation s and its twin at 1/s." width="2112" height="728" loading="lazy"></noscript>
+  <div class="lens__controls">
+    <label class="lens__slider"><span class="lens__name">Separation <i>s</i></span><output data-lens-output="s">0.64</output>
+      <input type="range" data-lens-input="s" min="0.5" max="0.9" step="0.005" value="0.64"></label>
+    <label class="lens__slider"><span class="lens__name">Mass ratio <i>q</i></span><output data-lens-output="logq">0.010</output>
+      <input type="range" data-lens-input="logq" min="-3" max="-1.3" step="0.01" value="-2"></label>
+    <label class="lens__slider"><span class="lens__name">Closest approach <i>u</i><sub>0</sub></span><output data-lens-output="u0">−0.009</output>
+      <input type="range" data-lens-input="u0" min="-0.08" max="0.08" step="0.001" value="-0.009"></label>
+    <label class="lens__slider"><span class="lens__name">Direction <i>α</i></span><output data-lens-output="alpha">106°</output>
+      <input type="range" data-lens-input="alpha" min="0" max="360" step="1" value="106"></label>
+    <div class="lens__options">
+      <label class="lens__check"><input type="checkbox" data-lens-twin checked> <span>Show the 1/<i>s</i> twin</span></label>
+      <button class="button" type="button" data-lens-reset>Reset</button>
+    </div>
+  </div>
+  <figcaption class="lens__caption">
+    <p class="lens__legend">
+      <span class="lens__key"><svg viewBox="0 0 28 8" width="28" height="8" aria-hidden="true"><path d="M0 4h28" class="lens__swatch"/></svg><span>Planet at <i>s</i> = <span data-lens-label="close">0.64</span></span></span>
+      <span class="lens__key"><svg viewBox="0 0 28 8" width="28" height="8" aria-hidden="true"><path d="M0 4h28" class="lens__swatch lens__swatch--twin"/></svg><span>Planet at 1/<i>s</i> = <span data-lens-label="wide">1.56</span></span></span>
+      <span class="lens__readout" data-lens-readout aria-live="polite"></span>
+    </p>
+    <p><strong>One light curve, two possible planets.</strong> A background star passes behind a star that has a planet. Left: the star’s path (drag it, or drag the arrowhead to turn it) and the lens’s central caustic. Right: how much brighter the background star appears as it goes by. A planet at separation <i>s</i> and one at 1/<i>s</i> give nearly the same caustic, so their light curves are hard to tell apart. {{ page.lens_note | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+    <p class="lens__fine">Simulated: two point-mass lenses and a uniform source of radius 0.003 Einstein radii. <i>s</i> is the planet–star separation in Einstein radii and <i>q</i> the planet-to-star mass ratio; the planet lies off the right edge of the map. Only <i>s</i> differs between the two curves. A real fit would adjust the other parameters as well, which brings them closer still.</p>
+  </figcaption>
+</figure>

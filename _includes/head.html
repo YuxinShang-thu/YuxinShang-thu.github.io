@@ -1,16 +1,62 @@
-{% include base_path %}
-
+{%- if page.url == "/" -%}
+  {%- capture page_title -%}{{ site.title }} – {{ site.tagline }}{%- endcapture -%}
+{%- else -%}
+  {%- capture page_title -%}{{ page.title | strip_html }} – {{ site.title }}{%- endcapture -%}
+{%- endif -%}
+{%- if page.description -%}
+  {%- assign page_description = page.description -%}
+{%- elsif page.collection and page.excerpt -%}
+  {%- assign page_description = page.excerpt | markdownify | strip_html | strip_newlines | truncate: 200 -%}
+{%- else -%}
+  {%- assign page_description = site.description -%}
+{%- endif -%}
 <meta charset="utf-8">
-
-{% include seo.html %}
-
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title | escape }}</title>
+<meta name="description" content="{{ page_description | escape }}">
+<meta name="author" content="{{ site.author.name }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="{% if page.collection %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page_description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ site.author.avatar | prepend: '/images/' | absolute_url }}">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F8FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1525" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/images/favicon-32x32.png' | relative_url }}" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}">
+<link rel="manifest" href="{{ '/images/manifest.json' | relative_url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+<link rel="preload" href="{{ '/assets/fonts/stix-two-text.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/archivo.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}">
+{%- if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "url": {{ "/" | absolute_url | jsonify }},
+  "image": {{ site.author.avatar | prepend: "/images/" | absolute_url | jsonify }},
+  "jobTitle": "Ph.D. student in astronomy",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "The Ohio State University" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Tsinghua University" },
+  "sameAs": [
+    {%- assign profiles = "googlescholar,orcid,github,researchgate,arxiv,ads,linkedin,bluesky" | split: "," -%}
+    {%- assign first = true -%}
+    {%- for key in profiles -%}
+      {%- if site.author[key] -%}
+        {%- unless first -%},{%- endunless %}
+    {{ site.author[key] | jsonify }}
+        {%- assign first = false -%}
+      {%- endif -%}
+    {%- endfor %}
+  ]
+}
 </script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+{%- endif %}

@@ -1,0 +1,89 @@
+---
+title: "CV"
+permalink: /cv/
+redirect_from:
+  - /resume
+# Shows a button that opens the browser's print dialog, for a PDF copy.
+print_button: true
+---
+{%- comment -%} Edit the content of this page in _data/cv.yml. {%- endcomment -%}
+{%- assign cv = site.data.cv -%}
+{%- assign pubs = site.publications | sort: "date" | reverse -%}
+{%- assign talks = site.talks | sort: "date" | reverse -%}
+
+{%- if cv.education %}
+<section class="section">
+  <h2 class="section__title">Education</h2>
+  <div class="section__body">
+    {%- for entry in cv.education %}
+    {% include cv-entry.html entry=entry %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if cv.research %}
+<section class="section">
+  <h2 class="section__title">Research experience</h2>
+  <div class="section__body">
+    {%- for entry in cv.research %}
+    {% include cv-entry.html entry=entry %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if cv.skills %}
+<section class="section">
+  <h2 class="section__title">Skills</h2>
+  <div class="section__body">
+    {%- for entry in cv.skills %}
+    {% include cv-entry.html entry=entry %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if pubs.size > 0 %}
+<section class="section">
+  <h2 class="section__title">Publications</h2>
+  <div class="section__body">
+    {%- for pub in pubs %}
+    {% include publication-item.html pub=pub compact=true %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if talks.size > 0 %}
+<section class="section">
+  <h2 class="section__title">Talks</h2>
+  <div class="section__body">
+    {%- for talk in talks %}
+    {% include talk-item.html talk=talk compact=true %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if cv.awards %}
+<section class="section">
+  <h2 class="section__title">Awards and scholarships</h2>
+  <div class="section__body">
+    {%- for entry in cv.awards %}
+    {% include cv-entry.html entry=entry %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if cv.service %}
+<section class="section">
+  <h2 class="section__title">Service and leadership</h2>
+  <div class="section__body">
+    {%- for entry in cv.service %}
+    {% include cv-entry.html entry=entry %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}

@@ -1,0 +1,33 @@
+{%- comment -%} One CV entry from _data/cv.yml. Pass `entry`. {%- endcomment -%}
+{%- assign e = include.entry -%}
+<article class="entry{% unless e.dates %} entry--plain{% endunless %}">
+  {%- if e.dates %}
+  <p class="entry__date">{{ e.dates }}</p>
+  {%- endif %}
+  <div class="entry__main">
+    <h3 class="entry__title">{{ e.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h3>
+    {%- if e.place %}
+    <p class="entry__meta">{{ e.place }}</p>
+    {%- endif %}
+    {%- if e.text %}
+    <div class="entry__text">{{ e.text | markdownify }}</div>
+    {%- endif %}
+    {%- if e.details %}
+    <dl class="entry__details">
+      {%- for detail in e.details %}
+      <div>
+        <dt>{{ detail.label }}</dt>
+        <dd>{{ detail.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</dd>
+      </div>
+      {%- endfor %}
+    </dl>
+    {%- endif %}
+    {%- if e.points %}
+    <ul class="entry__points">
+      {%- for point in e.points %}
+      <li>{{ point | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</article>

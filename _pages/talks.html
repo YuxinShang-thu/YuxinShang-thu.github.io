@@ -1,16 +1,15 @@
 ---
-layout: archive
 title: "Talks and presentations"
 permalink: /talks/
-author_profile: true
 ---
-
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{%- assign years = site.talks | sort: "date" | reverse | group_by_exp: "talk", "talk.date | date: '%Y'" -%}
+{%- for year in years %}
+<section class="section">
+  <h2 class="section__title">{{ year.name }}</h2>
+  <div class="section__body">
+    {%- for talk in year.items %}
+    {% include talk-item.html talk=talk date_format="%b %-d" %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endfor %}

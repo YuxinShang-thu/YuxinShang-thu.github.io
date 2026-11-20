@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="wrap">
+  <header class="page-head{% if page.print_button %} page-head--split{% endif %}">
+    <h1 class="page-head__title">{{ page.title }}</h1>
+    {%- if page.print_button %}
+    <button class="button" type="button" data-print hidden>Print or save as PDF</button>
+    <p class="print-only">
+      {%- if site.author.employer %}<span>{{ site.author.employer }}</span>{% endif -%}
+      {%- if site.author.email %}<span>{{ site.author.email }}</span>{% endif -%}
+      <span>{{ "/" | absolute_url | remove: "https://" | remove: "http://" | remove: "/" }}</span>
+    </p>
+    {%- endif %}
+    {%- if page.intro %}
+    <div class="page-head__intro">{{ page.intro | markdownify }}</div>
+    {%- endif %}
+  </header>
+  {{ content }}
+</div>

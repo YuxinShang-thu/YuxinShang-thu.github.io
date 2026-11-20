@@ -1,0 +1,18 @@
+{%- comment -%} One publication in a list. Pass `pub`; add `compact=true` to leave out the summary. {%- endcomment -%}
+{%- assign pub = include.pub -%}
+<article class="entry">
+  <p class="entry__date"><time datetime="{{ pub.date | date: '%Y-%m-%d' }}">{{ pub.date | date: "%Y" }}</time></p>
+  <div class="entry__main">
+    <h3 class="entry__title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3>
+    <p class="entry__meta">
+      {%- if pub.citation %}{{ pub.citation }}{% endif -%}
+      {%- if pub.venue %}{% if pub.citation %}<br>{% endif %}<cite>{{ pub.venue }}</cite>{% endif -%}
+    </p>
+    {%- unless include.compact %}
+    {%- if pub.excerpt %}
+    <div class="entry__text">{{ pub.excerpt | markdownify }}</div>
+    {%- endif %}
+    {%- endunless %}
+    {% include publication-links.html pub=pub %}
+  </div>
+</article>

@@ -1,0 +1,90 @@
+# The CV page (/cv/) is built from this file. Publications and talks are added
+# automatically from the _publications and _talks folders.
+#
+# Each entry can have: dates, title, place, text, details (label + text pairs)
+# and points (a bulleted list). Leave out what you don't need. Text accepts
+# Markdown, so [words](https://example.com) makes a link. Keep the quotes.
+
+education:
+  - dates: "2026 – ongoing"
+    title: "Ph.D. in Astronomy"
+    place: "The Ohio State University"
+  - dates: "2022 – 2026"
+    title: "B.S. in Mathematics and Physics"
+    place: "Tsinghua University"
+
+research:
+  - dates: "Apr. 2024 – Sep. 2025"
+    title: "Scientific Researcher"
+    place: "Tsinghua University"
+    details:
+      - label: "Project"
+        text: "Binary-lens Microlensing Effect on Planetary Sensitivity and Mass-ratio Function"
+      - label: "Duties"
+        text: "Organize research plan; Comprehensively simulate microlensing data analysis pipeline; Develop custom codes for data modeling to optimize accuracy–efficiency tradeoff"
+      - label: "Supervisor"
+        text: "Prof. Shude Mao, Dr. Hongjing Yang"
+
+  - dates: "Sep. 2025 – ongoing"
+    title: "Main Participant"
+    place: "Westlake University"
+    details:
+      - label: "Project"
+        text: "DREAMS – DECam Rogue Earths And Mars Survey"
+      - label: "Duties"
+        text: "6-Night observation using 4m Blanco/DECam telescope in Chile (remote)"
+      - label: "PI of DREAMS"
+        text: "Dr. Hongjing Yang, Dr. Weicheng Zang"
+
+  - dates: "Sep. 2025 – ongoing"
+    title: "Scientific Researcher"
+    place: "Leiden University"
+    details:
+      - label: "Project"
+        text: "Explore Intrinsic Galaxy Alignment with Marked Correlation Function (utilizing numerical simulation FLAMINGO)"
+      - label: "Duties"
+        text: "Organize research plan; Develop custom pipeline for MCF measurement; Validation for FLAMINGO's samples"
+      - label: "Supervisor"
+        text: "Prof. Henk Hoekstra, Dr. David Navarro, Dr. Divya Rana"
+
+  - dates: "Feb. 2026 – June 2026"
+    title: "Graduate Thesis"
+    place: "Tsinghua University"
+    details:
+      - label: "Project"
+        text: "Learning Intrinsic Galaxy Alignment in Numerical Simulation"
+      - label: "Duties"
+        text: "Independently complete the graduate thesis. I applied a deep learning model called \"DELTA\" on the dataset from FLAMINGO simulation to understand the learning ability of DELTA on intrinsic alignment signal in simulated universe."
+      - label: "Supervisor"
+        text: "Prof. Yuan-sen Ting (OSU), Prof. Cheng Zhao (THU)"
+
+skills:
+  - title: "HPC"
+    text: "With experience in microlensing data modeling and in cosmology MCF computation, I am experienced in using HPC to conduct computation-intensive project."
+  - title: "Data Modeling/Analysis"
+    text: "My research experience in microlensing especially trained me good at data modeling/analysis. I can skillfully use MCMC/downhill algorithm and grid search method to finish high-dimensional data fitting."
+  - title: "Deep learning"
+    text: "In ongoing project, I want to use deep learning to analyze the relationship between two physical properties in cosmological numerical simulation. Now I am learning to train and utilize deep learning model for astronomy."
+
+awards:
+  - dates: "2026"
+    title: "Outstanding Graduate of Tsinghua University (top 10%)"
+    text: "Awarded by Tsinghua University, June 29th 2026."
+  - dates: "2025"
+    title: "[Jiang Nanxiang Award](https://yz.tsinghua.edu.cn/en/Financial_Aid/Financial_Aid_System.htm)"
+    text: "Awarded by Tsinghua University in Sep. 2025."
+  - dates: "2024"
+    title: "[Tsinghua Xuetang Talents Program](https://www.tsinghua.edu.cn/en/Admissions/Undergraduate/Tsinghua_Xuetang_Talents_Program.htm) (physics)"
+    text: "Selected by Tsinghua University in Sep. 2024."
+  - dates: "2024"
+    title: "First Class Scholarship"
+    text: "Awarded by Tsinghua University in Sep. 2024."
+
+service:
+  - dates: "Sep. 2024 – Sep. 2025"
+    title: "Scientific Minister"
+    place: "Tsinghua Astronomy Society (TAS)"
+    points:
+      - "Organizing regular seminars and public science lectures of Tsinghua Astronomy Society. Since last year, we have been collaborating with Tsinghua Alumni Society in Boston to give public lectures together."
+      - "Administering and reviewing the publication of public science articles on the official WeChat channel of Tsinghua Astronomy Society. By now, our WeChat channel has more than 20k followers."
+      - "Maintaining the regular activities of Tsinghua Astronomy Society, including sidewalk astronomy, telescope management, astronomical photography exhibition, etc."

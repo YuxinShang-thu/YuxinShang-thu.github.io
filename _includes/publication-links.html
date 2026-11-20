@@ -1,0 +1,24 @@
+{%- comment -%} Links for one publication. Each line appears only if the publication sets that field. {%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- if pub.paperurl or pub.arxiv or pub.ads or pub.code or pub.slidesurl or pub.bibtexurl %}
+<ul class="links links--entry">
+  {%- if pub.paperurl %}
+  <li><a href="{{ pub.paperurl }}">Read the paper{% if pub.venue %} in {{ pub.venue }}{% endif %}</a></li>
+  {%- endif -%}
+  {%- if pub.arxiv %}
+  <li><a href="{{ pub.arxiv }}">arXiv</a></li>
+  {%- endif -%}
+  {%- if pub.ads %}
+  <li><a href="{{ pub.ads }}">ADS</a></li>
+  {%- endif -%}
+  {%- if pub.code %}
+  <li><a href="{{ pub.code }}">Code</a></li>
+  {%- endif -%}
+  {%- if pub.slidesurl %}
+  <li><a href="{{ pub.slidesurl }}">Slides</a></li>
+  {%- endif -%}
+  {%- if pub.bibtexurl %}
+  <li><a href="{{ pub.bibtexurl }}">BibTeX</a></li>
+  {%- endif %}
+</ul>
+{%- endif -%}

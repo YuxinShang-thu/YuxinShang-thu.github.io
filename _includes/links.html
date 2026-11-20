@@ -1,0 +1,34 @@
+{%- comment -%} Contact and profile links, built from `author` in _config.yml. {%- endcomment -%}
+{%- assign a = site.author -%}
+<ul class="links{% if include.class %} {{ include.class }}{% endif %}">
+  {%- if a.email %}
+  <li><a href="mailto:{{ a.email }}">{{ a.email }}</a></li>
+  {%- endif -%}
+  {%- if a.googlescholar %}
+  <li><a href="{{ a.googlescholar }}">Google Scholar</a></li>
+  {%- endif -%}
+  {%- if a.ads %}
+  <li><a href="{{ a.ads }}">NASA ADS</a></li>
+  {%- endif -%}
+  {%- if a.arxiv %}
+  <li><a href="{{ a.arxiv }}">arXiv</a></li>
+  {%- endif -%}
+  {%- if a.orcid %}
+  <li><a href="{{ a.orcid }}">ORCID</a></li>
+  {%- endif -%}
+  {%- if a.github %}
+  <li><a href="{% unless a.github contains '://' %}https://github.com/{% endunless %}{{ a.github }}">GitHub</a></li>
+  {%- endif -%}
+  {%- if a.researchgate %}
+  <li><a href="{{ a.researchgate }}">ResearchGate</a></li>
+  {%- endif -%}
+  {%- if a.linkedin %}
+  <li><a href="{{ a.linkedin }}">LinkedIn</a></li>
+  {%- endif -%}
+  {%- if a.bluesky %}
+  <li><a href="{{ a.bluesky }}">Bluesky</a></li>
+  {%- endif -%}
+  {%- if a.blog %}
+  <li><a href="{{ a.blog }}">Blog</a></li>
+  {%- endif %}
+</ul>

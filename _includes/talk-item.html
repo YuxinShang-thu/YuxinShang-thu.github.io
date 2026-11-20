@@ -1,0 +1,17 @@
+{%- comment -%} One talk in a list. Pass `talk`; `date_format` sets the date column; `compact=true` leaves out the description. {%- endcomment -%}
+{%- assign talk = include.talk -%}
+{%- assign date_format = include.date_format | default: "%b %Y" -%}
+<article class="entry">
+  <p class="entry__date"><time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: date_format }}</time></p>
+  <div class="entry__main">
+    <h3 class="entry__title"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
+    <p class="entry__meta">
+      {%- if talk.type %}{{ talk.type }}{% endif -%}
+      {%- if talk.venue %}{% if talk.type %}, {% endif %}{{ talk.venue }}{% endif -%}
+      {%- if talk.location %}<br>{{ talk.location }}{% endif -%}
+    </p>
+    {%- unless include.compact %}
+    <div class="entry__text">{{ talk.excerpt }}</div>
+    {%- endunless %}
+  </div>
+</article>

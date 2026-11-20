@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="wrap">
+  <header class="hero">
+    <div class="hero__text">
+      <h1 class="hero__name">{{ site.author.name }}</h1>
+      {%- if page.lead %}
+      <div class="hero__lead">{{ page.lead | markdownify }}</div>
+      {%- endif %}
+      {% include links.html %}
+    </div>
+    {%- if site.author.avatar %}
+    <img class="hero__photo" src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="{{ site.author.name }}" width="720" height="900" fetchpriority="high">
+    {%- endif %}
+  </header>
+  {%- if page.lens_figure %}
+  {% include lens-figure.html %}
+  {%- endif %}
+  {{ content }}
+</div>
